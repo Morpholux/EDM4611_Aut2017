@@ -17,4 +17,5 @@ _ _ _
 ![Our Medium is Computation](https://dl.dropboxusercontent.com/s/hsvcnobh727vwki/medium_is_computation.jpg
 "Citation tirée d’une conférence donnée par Jessica Rosenkrantz")
 
-
+<br>
+<br>
