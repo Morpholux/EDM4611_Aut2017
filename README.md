@@ -14,5 +14,8 @@ _ _ _
 <br>
 <br>
 
-![Précepte de Nervous System](https://dl.dropboxusercontent.com/s/hsvcnobh727vwki/medium_is_computation.jpg
+![Our Medium is Computation](https://dl.dropboxusercontent.com/s/hsvcnobh727vwki/medium_is_computation.jpg
 "Citation tirée d’une conférence donnée par Jessica Rosenkrantz")
+
+
+[[ https://dl.dropboxusercontent.com/s/hsvcnobh727vwki/medium_is_computation.jpg | height = 100px ]]
