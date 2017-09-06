@@ -18,4 +18,3 @@ _ _ _
 "Citation tirée d’une conférence donnée par Jessica Rosenkrantz")
 
 
-[[ https://dl.dropboxusercontent.com/s/hsvcnobh727vwki/medium_is_computation.jpg | height = 100px ]]
