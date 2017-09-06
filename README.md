@@ -10,3 +10,7 @@ Enseignant : <a href="mailto:renaud.jean-francois@uqam.ca">Jean-François Renaud
 
 <br>
 _ _ _
+
+`![Précepte de Nervous System]`
+`(https://dl.dropboxusercontent.com/s/hsvcnobh727vwki/medium_is_computation.jpg`<br>
+`"Citation tirée d’une conférence donnée par Jessica Rosenkrantz")`
