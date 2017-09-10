@@ -19,3 +19,17 @@ _ _ _
 
 <br>
 <br>
+_ _ _
+
+####Description des travaux d’atelier
+
+A1 . **Atelier Pixels** - mardi, semaine 2
+
+• Expérimenter avec les méthodes de lecture et d’écriture des composants d’un affichage matriciel, les pixels. Ceux-ci sont interprétés/altérés directement dans le sketch ou depuis des fichiers importés. On évite l’utilisation des commandes set() ou get() pour lire ou écrire la donnée de couleur. On lui préfère la commande pixels[]. Enfin, on voit comment extraire les valeurs RGB ou HSB à l’aide d’opérations <i>Bitwise</i>. Voir le dossier comprenant les notes de cours.
+
+Notions à considérer :
+
+`pixels[], loadPixels(), updatePixels(), loadImage(), PImage`
+
+<br>
+
