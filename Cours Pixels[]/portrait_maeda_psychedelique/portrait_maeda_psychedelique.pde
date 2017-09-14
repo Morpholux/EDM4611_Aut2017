@@ -20,13 +20,16 @@ void setup() {
 
   // La taille du sketch s’ajuste à l’image chargée en mémoire
   surface.setSize(img.width, img.height);
+
+  // Chargement des pixels de l’image, en prévision de la lecture
+  // Comme il n’y aura pas de changement apporté à ce tableau de données,
+  // on peut en faire l’appel une seule fois, donc dans le setup().
+  img.loadPixels();
 }
 
 
 void draw() {
   background(0);
-  // Chargement des pixels de l’image, en prévision de la lecture
-  img.loadPixels();
   // Chargement des pixels du sketch, en prévision de la l’écriture
   loadPixels();
 
