@@ -33,3 +33,13 @@ Notions à considérer :
 
 <br>
 
+A2 . **Atelier tracé vectoriel** - mardi, semaine 3
+
+• Expérimenter avec la création d’un motif ou d’une structure graphique, potentiellement animée. Le dessin des figures se fait à l’aide d’une méthode exclusivement vectorielle, c’est-à-dire que les formes sont constituées de tracés (droites, courbes), et donc de points de contrôle (ancrages, leviers) pouvant être modifiés à travers le code. On évite l’utilisation des primitives 2D rect() ou ellipse(), bien que ces dernières soient également de la famille des objets vectoriels. Votre sketch pourrait permettre l’exportation en format PDF, donnant l’accès à la structure de dessin, contrairement à une sauvegarde matricielle.
+
+Notions à considérer :
+
+`vertex(), curve(), bezier(), curveVertex(), bezierVertex(), beginShape() endShape(), PShape`
+
+<br>
+
