@@ -18,9 +18,15 @@ void draw() {
   pas++;
   pas%=nbPas;
   // Quatre arguments : ratio du parcours, point de départ, distance à parcourir, durée du parcours
-  posX = easeOutExpo(pas, 100, 400, nbPas);
+  posX = easeInExpo(pas, 100, 400, nbPas);
   ellipse(posX, 300, 20, 20);
 }
+
+// Linéaire
+float linearTween (float t, float b, float c, float d) {
+  return c*t/d+b;
+}
+
 
 // In
 float easeInQuad (float t, float b, float c, float d) {
