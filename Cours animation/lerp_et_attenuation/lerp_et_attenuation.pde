@@ -20,7 +20,7 @@ void draw() {
   increment = frameCount%fps;
   
   // Usages des fonctions d’atténuation
-  // Trois formes d’atténuation :
+  // Tests avec trois formes d’atténuation :
   valeurAttenuation = (easeInQuad(increment, 0, 1.0, fps));
   //valeurAttenuation = (easeOutQuad(increment, 0, 1.0, fps));
   //valeurAttenuation = (easeInOutQuad(increment, 0, 1.0, fps));
@@ -34,7 +34,7 @@ void draw() {
 }
 
 
-// Quelques fonctions de Penner:
+// Aperçu de quelques fonctions de Penner:
 
 float easeInQuad (float t, float b, float c, float d) {
   return c*(t/=d)*t+b;

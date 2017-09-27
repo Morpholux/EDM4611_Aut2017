@@ -22,12 +22,13 @@ void draw() {
   ellipse(posX, 300, 20, 20);
 }
 
-// Linéaire
+// Linéaire (aucune atténuation)
 float linearTween (float t, float b, float c, float d) {
   return c*t/d+b;
 }
 
 
+// Atténuation en entrée
 // In
 float easeInQuad (float t, float b, float c, float d) {
   return c*(t/=d)*t+b;
@@ -58,6 +59,7 @@ float easeInCirc (float t, float b, float c, float d) {
 }
 
 
+// Atténuation en sortie
 // Out
 float easeOutQuad (float t, float b, float c, float d) {
   return -c*(t/=d)*(t-2)+b;
@@ -87,7 +89,7 @@ float easeOutCirc (float t, float b, float c, float d) {
   return c * sqrt(1 - (t=t/d-1)*t) + b;
 }
 
-
+// Atténuation en entrée-sortie
 // InOut
 float easeInOutQuad (float t, float b, float c, float d) {
   if ((t/=d/2) < 1) return c/2 * t * t + b;
