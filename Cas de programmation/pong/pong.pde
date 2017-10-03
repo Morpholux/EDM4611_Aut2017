@@ -7,14 +7,12 @@
 
 import processing.sound.*;
 SoundFile soundfile;
-// Ne pas se préoccuper des prints "Synth not found" dans la console
-// N’apparaît pas si l’on ne modifie pas le rate() de notre fichier sonore
 
 // Instance de la classe Balle
 Balle b;
 
 // Variables globales
-int diam = 20;
+int diam = 30;
 int hauteurPalette = 50;
 int largeurPalette = 10;
 int limiteX= 500;
@@ -47,9 +45,9 @@ void setup() {
   posyPalette = height/2;
   // Pour simplifier calculs de collision avec la palette (primitive rectangle)
   rectMode(CENTER);
-  
+
   //Load a soundfile
-    soundfile = new SoundFile(this, "son_pong.aif");
+  soundfile = new SoundFile(this, "son_pong.aif");
 }
 
 void draw() {
@@ -110,20 +108,18 @@ void draw() {
     // modification de la variable membre de notre instance
     b.contact = true;
     b.sonJoue = true;
-    
   }
-  
-  
+
+
   // _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
   // 4 - Jouer un son une fois par contact
   if (b.sonJoue) {
-    soundfile.rate(0.25); // étant donné échantillonnage fichier à 11025
     soundfile.play();
     b.sonJoue = false;
   }
-  
-  
+
+
 
   // _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
@@ -147,7 +143,7 @@ void keyPressed() {
   } else if (keyCode == DOWN) {
     bas = true;
   }
-  
+
   if (key == ' ') {
     afficheZone=!afficheZone;
   }
@@ -170,15 +166,15 @@ class Balle {
   // constructeur
   Balle () {
     // Valeurs par défaut à la création d'une instance
-    
+
     posx = -diam; 
     posy = height/2; // départ toujours depuis le centre-gauche
-    
+
     // Prendre note que la balle se déplacera à une vitesse pouvant varier
     // de 5 pixels à 10 pixels par frame.
     incrementx = 5 + constrain((frameCount*0.001), 0, 5); // augmentation progressive des vitesses, et donc, du niveau de difficulté
     incrementy = random(-2, 2);
-    
+
     contact = false;
     sonJoue = false;
   }
@@ -191,7 +187,7 @@ class Balle {
       posx += incrementx; // balle se déplace vers la droite de l'écran
     }
     posy += incrementy; // déplacement suivant un angle
-    
+
     // Lorsque la balle sort du sketch par l'un de ses côtés, on recrée une nouvelle instance
     if ((posx > (width+diam))||(posx < -diam)||(posy > (height+diam))||(posy < -diam)) {
       b = new Balle();
@@ -200,6 +196,6 @@ class Balle {
 
   // méthode 2
   void display() {
-    ellipse(posx, posy, 30, 30);
+    ellipse(posx, posy, diam, diam);
   }
 }
