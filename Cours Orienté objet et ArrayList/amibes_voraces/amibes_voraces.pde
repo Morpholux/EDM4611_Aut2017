@@ -7,7 +7,7 @@
 // Tableau Java :
 ArrayList<Amibe> amibes = new ArrayList<Amibe>();
 
-int nb_amibes = 20;
+int nb_amibes = 100;
 
 
 
@@ -79,7 +79,7 @@ class Amibe {
   float taille, posx, posy, posxinit, posyinit;
   color couleur;
   int timeSteps1 = int(random(1000)); // maintenir le format de type entier
-  int timeSteps2 = int(random(1000)); // maintenir le format de type entier
+  int timeSteps2 = 1000+int(random(1000)); // maintenir le format de type entier
   float noiseScale = 0.005;
   float amplitude = width;
   float deltaX, deltaY;
@@ -92,8 +92,8 @@ class Amibe {
     posyinit = _y;
     posx = posxinit;
     posy = posyinit;
-    taille = 20;
-    couleur = color(200);
+    taille = 5;
+    couleur = color(255);
     collision = false;
     index = _i;
   }
