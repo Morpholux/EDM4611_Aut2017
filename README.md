@@ -78,7 +78,7 @@ A5 . **Atelier géométrie et espace 3D** - semaine 6
 ![Flèches](https://dl.dropboxusercontent.com/s/mugn2vnyf3g9nqg/arrows_sm.jpg
 "Flèches paramétriques dans un espace 3D")
 
-• La gestion de la 3D dans Processing demeure rudimentaire : utilisation de géométries simples (deux primitives, possibilité de modélisation paramétrique, importation d’un fichier OBJ); distribution des objets dans un espace 3D; gestion de quelques paramètres d’éclairage. Rien de comparable aux environnements spécialisés, surtout pas si l’on vise une grande qualité au niveau des rendus. Mais Processing permet de se frotter aux règles mathématiques sous-jacentes à la réalisation de volumes et de mieux comprendre les composantes d’un maillage 3D (vertex, polygones). À la suite de cet atelier, vous êtes invité à construire un volume paramétrique, à l’éclairer et à l’animer à travers des transformateurs (translate, rotate, scale) ou des mouvements de caméra. La création d’un «ruban» ou d’un «tube» (une ligne avec une épaisseur) constitue un cas intéressant à explorer.
+• La gestion de la 3D dans Processing demeure rudimentaire : utilisation de géométries simples (seulement deux primitives, mais possibilité de modélisation paramétrique et d’importation de fichiers OBJ); distribution des objets dans un espace 3D; gestion de quelques paramètres d’éclairage. Rien de comparable aux environnements de production spécialisés, surtout pas si l’on vise une grande qualité au niveau des rendus. Mais Processing permet de se frotter aux règles mathématiques sous-jacentes à la réalisation de volumes et de mieux comprendre les composantes d’un maillage 3D (vertex, polygones). À la suite de cet atelier, vous êtes invité à construire un volume paramétrique, à l’éclairer et à l’animer à travers des transformateurs (translate, rotate, scale) ou des mouvements de caméra. La création d’un «ruban» ou d’un «tube» (une ligne avec une épaisseur) constitue un cas intéressant à explorer.
 
 Notions à considérer :
 
@@ -86,7 +86,7 @@ Notions à considérer :
 
 `beginShape(TRIANGLE_STRIP), beginShape(QUAD_STRIP)`
 
-`camera, lights(), ambientLight(), directionalLight(), pointLight(), spotLight()`
+`camera, lights(), ambientLight(), directionalLight(), pointLight(), spotLight(), texture()`
 
 `Librairie PeasyCam`
 
