@@ -19,6 +19,7 @@ void setup() {
 }
 
 void draw() {
+  
   Couleur cTemp = (Couleur)tableauJava.get(tableauJava.size()-1);
   background(color(cTemp.c));
 }
